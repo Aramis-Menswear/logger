@@ -34,5 +34,5 @@ async function askVersion() {
 
 (async () => {
   const version = await askVersion();
-  await asyncExec(`npm version ${version} --no-git-tag-version`);
+  await asyncExec(`npm version ${version} --no-git-tag-version && git add ./package*`);
 })();
