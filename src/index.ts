@@ -10,6 +10,7 @@ const logConsole = (...msgs: unknown[]) => {
     logger.info(">> ", msg);
   });
   logger.info("");
+  console.log("OK");
 };
 
 const info = (...messages: unknown[]) => {
